@@ -24,7 +24,7 @@ svg = d3.select('#scatter')
 function chooseYear(year) {
     currentYear = year;
     if (currentYear == 'ALL'){
-        d3.csv(`data/${currentYear}_fifa`, (d) => ({
+        d3.csv(`data/${currentYear}_fifa.csv`, (d) => ({
             name: d.name,
             year: currentYear,
             rank: +d.rank,
@@ -45,7 +45,7 @@ function chooseYear(year) {
 
     //lololololo
     else{
-        d3.csv(`data/${currentYear}_fifa`, (d) => ({
+        d3.csv(`data/${currentYear}_fifa,csv`, (d) => ({
             name: d.name,
             year: currentYear,
             rank: +d.rank,

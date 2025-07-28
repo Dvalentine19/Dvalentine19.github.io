@@ -1,5 +1,6 @@
 let currentYear = 'ALL';
 let currentLeague = '';
+let currentPosition = 'ALL';  // or '', either works, just be consistent!
 let scatterData = {};
 
 const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
@@ -80,8 +81,28 @@ function resetLeague() {
     updateScatterplot(scatterData[currentYear]);
 }
 
+function updatePositionData(selectedPosition) {
+    currentPosition = selectedPosition || currentPosition;
+    updateScatterplot();
+}
+
+function resetPosition() {
+    currentPosition = 'ALL';
+    updateScatterplot();
+}
+
+
 function updateScatterplot(data) {
     svg.selectAll('*').remove();
+
+      // Apply both league and position filters
+      let plotData = data || scatterData[currentYear];
+      if (currentLeague) {
+          plotData = plotData.filter(d => d.league === currentLeague);
+      }
+      if (currentPosition && currentPosition !== 'ALL') {
+          plotData = plotData.filter(d => d.position === currentPosition);
+      }
 
     const xScale = d3.scaleLinear()
         .domain([86, 95])
@@ -103,12 +124,12 @@ function updateScatterplot(data) {
         .style('font-size', '12px');
 
     svg.selectAll('circle')
-        .data(data || scatterData[currentYear])
+        .data(plotData)
         .enter()
         .append('circle')
-        .attr('cx', (d) => xScale(d.overall) + (Math.random() - 0.5) * 15)
-        .attr('cy', (d) => yScale(d.potential) + (Math.random() - 0.5) * 15)
-        .attr('r', 5)
+        .attr('cx', (d) => xScale(d.overall) + (Math.random() - 0.5) * 17)
+        .attr('cy', (d) => yScale(d.potential) + (Math.random() - 0.5) * 17)
+        .attr('r', 4)
         .style('fill', (d) => colorScale(d.league))
         .on('mouseover', (event, d) => {
             tooltip.style('visibility', 'visible')
@@ -118,6 +139,8 @@ function updateScatterplot(data) {
                     Club: ${d.club}<br>
                     Position: ${d.position}<br>
                     Overall: ${d.overall}<br>
+                    Age: ${d.age}<br>
+                    Nation: ${d.nation}<br>
                     Potential: ${d.potential}<br>
                     Rank: ${d.rank}`
                 )
@@ -184,6 +207,33 @@ function updateScatterplot(data) {
         });
 
         legendDiv.appendChild(legendItem);
+    });
+
+    // --- POSITION LEGEND ---
+    const positionLegendDiv = document.getElementById('position-legend');
+    positionLegendDiv.innerHTML = '';
+
+    // Use the filtered plotData, not scatterData, so only visible positions show up
+    const positions = [...new Set(plotData.map(d => d.position))];
+    positions.sort().forEach((position) => {
+        const legendItem = document.createElement('div');
+        legendItem.className = 'legend-item';
+
+        const legendColor = document.createElement('div');
+        legendColor.className = 'legend-color';
+        legendColor.style.backgroundColor = colorScale(position); // You can use a different color scale for positions if you want
+
+        const legendLabel = document.createElement('div');
+        legendLabel.textContent = position;
+
+        legendItem.appendChild(legendColor);
+        legendItem.appendChild(legendLabel);
+
+        legendItem.addEventListener('click', () => {
+            updatePositionData(position);
+        });
+
+        positionLegendDiv.appendChild(legendItem);
     });
 
     const legendHeight = legendDiv.offsetHeight;

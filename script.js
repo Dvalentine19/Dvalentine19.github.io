@@ -106,9 +106,9 @@ function updateScatterplot(data) {
         .data(data || scatterData[currentYear])
         .enter()
         .append('circle')
-        .attr('cx', (d) => xScale(d.overall) + (Math.random() - 0.5) * 12)
-        .attr('cy', (d) => yScale(d.potential) + (Math.random() - 0.5) * 12)
-        .attr('r', 3)
+        .attr('cx', (d) => xScale(d.overall) + (Math.random() - 0.5) * 15)
+        .attr('cy', (d) => yScale(d.potential) + (Math.random() - 0.5) * 15)
+        .attr('r', 5)
         .style('fill', (d) => colorScale(d.league))
         .on('mouseover', (event, d) => {
             tooltip.style('visibility', 'visible')

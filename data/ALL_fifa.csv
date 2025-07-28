@@ -187,30 +187,10 @@
 28,David Silva,CAM,88,88,33,Manchester City,Premier League,Spain
 29,Edinson Cavani,ST,88,88,32,Paris Saint-Germain,Ligue 1,Uruguay
 30,Diego Godin,CB,88,88,33,Inter,Serie A,Uruguay
-31,Toni Kroos,CM,88,88,29,Real Madrid CF,La Liga,Germany
-32,Marco Reus,CAM,88,88,30,Borussia Dortmund,Bundesliga,Germany
-33,Aubameyang,ST,88,88,30,Arsenal,Premier League,Gabon
-34,Christian Dannemann Eriksen,CAM,88,89,27,Tottenham Hotspur,Premier League,Denmark
-35,Thibaut Courtois,GK,88,89,27,Real Madrid CF,La Liga,Belgium
-36,Paul Pogba,CM,88,91,26,Manchester United,Premier League,France
-37,Raheem Sterling,RW,88,90,24,Manchester City,Premier League,England
-38,Sadio Mane,LW,88,88,27,Liverpool,Premier League,Senegal
-39,Ederson Santana de Moraes,GK,88,91,25,Manchester City,Premier League,Brazil
-40,Paulo Bruno Exequiel Dybala,CAM,88,92,25,Juventus,Serie A,Argentina
 27,Gianluigi Buffon,GK,88,88,40,Paris Saint-Germain,Ligue 1,Italy
 28,Samir Handanoviƒç,GK,88,88,33,Inter,Serie A,Slovenia
 29,Thiago Emiliano da Silva,CB,88,88,33,Paris Saint-Germain,Ligue 1,Brazil
 30,Gonzalo Gerardo Higuain,ST,88,88,30,AC Milan,Serie A,Argentina
-31,Hugo Lloris,GK,88,88,31,Tottenham Hotspur,Premier League,France
-32,Gareth Frank Bale,RW,88,88,28,Real Madrid CF,La Liga,Wales
-33,Marcelo Vieira da Silva,LB,88,88,30,Real Madrid CF,La Liga,Brazil
-34,Philippe Coutinho Correia,LW,88,89,26,FC Barcelona,La Liga,Brazil
-35,Sergio Busquets i Burgos,CDM,88,88,29,FC Barcelona,La Liga,Spain
-36,Christian Dannemann Eriksen,CAM,88,91,26,Tottenham Hotspur,Premier League,Denmark
-37,Paul Pogba,CM,88,91,25,Manchester United,Premier League,France
-38,Lorenzo Insigne,LW,88,88,27,Napoli,Serie A,Italy
-39,James Rodriguez,CAM,88,89,26,FC Bayern Munchen,Bundesliga,Colombia
-40,Carlos Henrique Venancio Casimiro,CDM,88,91,26,Real Madrid CF,La Liga,Brazil
 20,Arjen Robben,RM,88,88,33,FC Bayern Munchen,Bundesliga,Netherlands
 21,Zlatan Ibrahimovic,ST,88,88,35,Manchester United,Premier League,Sweden
 22,Thiago Silva,CB,88,88,32,Paris Saint-Germain,Ligue 1,Brazil
@@ -222,60 +202,9 @@
 28,Leonardo Bonucci,CB,88,88,30,AC Milan,Serie A,Italy
 29, Aubameyang,ST,88,88,28,Borussia Dortmund,Bundesliga,Gabon
 30,Thiago,CM,88,90,26,FC Bayern Munchen,Bundesliga,Spain
-31,Antoine Griezmann,ST,88,91,26,Atletico de Madrid,La Liga,France
-32,Jan Oblak,GK,88,93,24,Atletico de Madrid,La Liga,Slovenia
-33,Paulo Bruno Exequiel Dybala,CAM,88,93,23,Juventus,Serie A,Argentina
 26,Luka Modric,CM,87,87,38,Real Madrid,La Liga,Croatia
 27,Frenkie de Jong,CM,87,86,26,FC Barcelona,La Liga,Holland
 28,Lautaro Martinez,ST,87,88,26,Inter,Serie A,Argentina
 29,Martin odegaard,CAM,87,89,24,Arsenal,Premier League,Norway
-30,Mike Maignan,GK,87,85,28,Milan,Serie A,France
-31,Marquinhos,CB,87,88,29,Paris SG,Ligue 1,Brazil
-32,Gregor Kobel,GK,87,87,25,Borussia Dortmund,Bundesliga,Switzerland
-33,Heung Min Son,LW,87,87,31,Spurs,Premier League,Korea Republic
-34,Gianluigi Donnarumma,GK,87,90,24,Paris SG,Ligue 1,Italy
-35,Manuel Neuer,GK,87,84,37,FC Bayern Munchen,Bundesliga,Germany
-31,David De Gea,GK,87,87,31,Manchester United,Premier League,Spain
-32,Marco Verratti,CM,87,87,29,Paris Saint Germain,Ligue 1,Italy
-33,Antonio Rudiger,CB,87,88,29,Real Madrid,La Liga,Germany
-34,Leon  Goretzka,CM,87,88,27,FC Bayern Munchen,Bundesliga,Germany
-35,Mike Maignan,GK,87,90,26,Milan,Serie A,France
-36,Andrew Robertson,LB,87,87,28,Liverpool,Premier League,Scotland
-37,Frenkie de Jong,CM,87,92,25,FC Barcelona,La Liga,Netherlands
-38,Rodrigo,CDM,87,89,26,Manchester City,Premier League,Spain
-31,Sergio Aguero,ST,87,87,33,FC Barcelona,La Liga,Argentina
-32,Hugo Lloris,GK,87,87,34,Tottenham Hotspur,Premier League,France
-33,Luka Modric,CM,87,87,35,Real Madrid CF,La Liga,Croatia
-34,Andel di Maria,RW,87,87,33,Paris Saint-Germain,Ligue 1,Argentina
-35,Wojciech Szczƒôsny,GK,87,87,31,Juventus,Serie A,Poland
-36,Thomas Muller,CAM,87,87,31,FC Bayern Munchen,Bundesliga,Germany
-37,Ciro Immobile,ST,87,87,31,Lazio,Serie A,Italy
-38,Paul Pogba,CM,87,87,28,Manchester United,Premier League,France
-39,Marco Verratti,CM,87,87,28,Paris Saint-Germain,Ligue 1,Italy
-40,Marcos Corria,CB,87,90,27,Paris Saint-Germain,Ligue 1,Brazil
 29,Giorgio Chiellini,CB,87,87,35,Juventus,Serie A,Italy
 30,Hugo Lloris,GK,87,87,33,Tottenham Hotspur,Premier League,France
-31,Luis Suarez,ST,87,87,33,FC Barcelona,La Liga,Uruguay
-32,Luka Modric,CM,87,87,34,Real Madrid CF,La Liga,Croatia
-33,Di Maria,RW,87,87,32,Paris Saint-Germain,Ligue 1,Argentina
-34,Wojciech Tomasz Szczƒôsny,GK,87,87,30,Juventus,Serie A,Poland
-35, Aubameyang,ST,87,87,31,Arsenal,Premier League,Gabon
-36,Sergio Busquets i Burgos,CDM,87,87,31,FC Barcelona,La Liga,Spain
-37,Ciro Immobile,ST,87,87,30,Lazio,Serie A,Italy
-38,Keylor Navas Gamboa,GK,87,87,33,Paris Saint-Germain,Ligue 1,Costa Rica
-39,Antoine Griezmann,ST,87,87,29,FC Barcelona,La Liga,France
-40,Son,LM,87,87,27,Tottenham Hotspur,Premier League,Korea Republic
-34,Andres Iniesta,CM,87,87,33,FC Barcelona,La Liga,Spain
-35,Gerard Pique,CB,87,87,30,FC Barcelona,La Liga,Spain
-36,Samir Handanovic,GK,87,87,32,Inter,Serie A,Slovenia
-37,David Silva,CAM,87,87,31,Manchester City,Premier League,Spain
-38,Ivan Rakitic,CM,87,87,29,FC Barcelona,La Liga,Croatia
-39,Marek Hamsic,CM,87,87,29,Napoli,Serie A,Slovakia
-40,Marcelo Vieira da Silva,LB,87,87,29,Real Madrid CF,La Liga,Brazil
-36,Ousmane Dembele,RW,86,93,26,Paris SG,Ligue 1,France
-37,Bukayo Saka,RW,86,92,22,Arsenal,Premier League,England
-38,Jude Bellingham,CM,86,96,20,Real Madrid,La Liga,England
-39,Rafael Leao,LW,86,93,24,Milan,Serie A,Portugal
-40,Pedri,CM,86,94,20,FC Barcelona,La Liga,Spain
-39,Thiago Silva,CB,86,86,37,Chelsea,Premier League,Brazil
-40,Hugo Lloris,GK,86,86,35,Tottenham Hotspur,Premier League,France

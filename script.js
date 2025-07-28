@@ -105,11 +105,11 @@ function updateScatterplot(data) {
       }
 
     const xScale = d3.scaleLinear()
-        .domain([85, 95])
+        .domain([86, 95])
         .range([0, width]);
 
     const yScale = d3.scaleLinear()
-        .domain([83, 98])
+        .domain([86, 98])
         .range([height, 0]);
 
     const tooltip = d3.select('body')

@@ -85,11 +85,11 @@ function updateScatterplot(data) {
     svg.selectAll('*').remove();
 
     const xScale = d3.scaleLinear()
-        .domain([50, 100])
+        .domain([80, 100])
         .range([0, width]);
 
     const yScale = d3.scaleLinear()
-        .domain([50, 100])
+        .domain([80, 100])
         .range([height, 0]);
 
     const tooltip = d3.select('body')
@@ -107,9 +107,9 @@ function updateScatterplot(data) {
         .data(data || scatterData[currentYear])
         .enter()
         .append('circle')
-        .attr('cx', (d) => xScale(d.overall))
-        .attr('cy', (d) => yScale(d.potential))
-        .attr('r', 5)
+        .attr('cx', (d) => xScale(d.overall) + (Math.random() - 0.5) * 6)
+        .attr('cy', (d) => yScale(d.potential) + (Math.random() - 0.5) * 6)
+        .attr('r', 3)
         .style('fill', (d) => colorScale(d.league))
         .on('mouseover', (event, d) => {
             tooltip.style('visibility', 'visible')

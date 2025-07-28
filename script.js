@@ -219,10 +219,6 @@ function updateScatterplot(data) {
         const legendItem = document.createElement('div');
         legendItem.className = 'legend-item';
 
-        const legendColor = document.createElement('div');
-        legendColor.className = 'legend-color';
-        legendColor.style.backgroundColor = colorScale(position); // You can use a different color scale for positions if you want
-
         const legendLabel = document.createElement('div');
         legendLabel.textContent = position;
 

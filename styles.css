@@ -39,6 +39,7 @@ h2{
     padding: 5px;         /* reduced padding */
     font-size: 14px;      /* smaller font size */
     margin-top: 10px;
+    margin-bottom: 20px;
     min-width: 140px;     /* optional: ensures the legend isn’t too wide */
     width: fit-content;
     height: auto;

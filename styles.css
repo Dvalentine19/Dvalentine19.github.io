@@ -37,11 +37,13 @@ h2{
 #legend {
     border: 3px solid black;
     padding: 5px;         /* reduced padding */
-    height: auto;         /* let height fit the content */
     font-size: 14px;      /* smaller font size */
     margin-top: 10px;
     min-width: 140px;     /* optional: ensures the legend isn’t too wide */
-    width: fit-content;   /* shrink width to content */
+    width: fit-content;
+    height: auto;
+    align-self: flex-start;   /* force compact fit if in a flex container */
+    box-sizing: border-box;   /* shrink width to content */
 }
 
 .legend-item{

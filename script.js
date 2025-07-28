@@ -43,7 +43,6 @@ function chooseYear(year) {
         })
     }
 
-    //lololololofdfdfdf
     else{
         d3.csv(`data/${currentYear}_fifa.csv`, (d) => ({
             name: d.name,
@@ -85,11 +84,11 @@ function updateScatterplot(data) {
     svg.selectAll('*').remove();
 
     const xScale = d3.scaleLinear()
-        .domain([80, 100])
+        .domain([84, 96])
         .range([0, width]);
 
     const yScale = d3.scaleLinear()
-        .domain([80, 100])
+        .domain([82, 98])
         .range([height, 0]);
 
     const tooltip = d3.select('body')
@@ -107,8 +106,8 @@ function updateScatterplot(data) {
         .data(data || scatterData[currentYear])
         .enter()
         .append('circle')
-        .attr('cx', (d) => xScale(d.overall) + (Math.random() - 0.5) * 6)
-        .attr('cy', (d) => yScale(d.potential) + (Math.random() - 0.5) * 6)
+        .attr('cx', (d) => xScale(d.overall) + (Math.random() - 0.5) * 12)
+        .attr('cy', (d) => yScale(d.potential) + (Math.random() - 0.5) * 12)
         .attr('r', 3)
         .style('fill', (d) => colorScale(d.league))
         .on('mouseover', (event, d) => {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1> Top 40 Fifa Players Overview</h1>
+
+    <div id="scatter_container">
+        <div id="scatter"></div>
+        <div id="legend" class="legend"></div>
+        <div class="b_container">
+            <input type="button" value="All Leagues" id="reset-button" onclick="resetLeague()">
+        </div>
+    </div>
+
+    <div id="selector">
+        <div class="b_container">
+            <input type="button" value="All" onclick="chooseYear('ALL')">
+        </div>
+        <div class="b_container">
+            <input type="button" value="2018" onclick="chooseYear('2018')">
+        </div>
+        <div class="b_container">
+            <input type="button" value="2019" onclick="chooseYear('2019')">
+        </div>
+        <div class="b_container">
+            <input type="button" value="2020" onclick="chooseYear('2020')">
+        </div>
+        <div class="b_container">
+            <input type="button" value="2021" onclick="chooseYear('2021')">
+        </div>
+        <div class="b_container">
+            <input type="button" value="2022" onclick="chooseYear('2022')">
+        </div>
+        <div class="b_container">
+            <input type="button" value="2023" onclick="chooseYear('2023')">
+        </div>
+        <div class="b_container">
+            <input type="button" value="2024" onclick="chooseYear('2024')">
+        </div>
+    </div>
+
+    <h2>
+        The chart on this webpage visualizes the performance of the top 40 FIFA soccer players from 2018 to 2024, focusing on their Overall and Potential ratings.
+        It highlights how elite players maintain high ratings over multiple years, showcasing the longevity of their peak performance.
+        Use the navigation buttons to explore player ratings across different years.
+        Filter by position or league using the Legend Box, and hover over any data point to see detailed information about each player.
+    </h2>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

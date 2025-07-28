@@ -84,7 +84,7 @@ function updateScatterplot(data) {
     svg.selectAll('*').remove();
 
     const xScale = d3.scaleLinear()
-        .domain([84, 96])
+        .domain([86, 95])
         .range([0, width]);
 
     const yScale = d3.scaleLinear()

@@ -45,7 +45,7 @@ function chooseYear(year) {
 
     //lololololo
     else{
-        d3.csv(`data/${currentYear}_fifa,csv`, (d) => ({
+        d3.csv(`data/${currentYear}_fifa.csv`, (d) => ({
             name: d.name,
             year: currentYear,
             rank: +d.rank,

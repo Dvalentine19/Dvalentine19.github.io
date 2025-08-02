@@ -242,23 +242,21 @@ function updateScatterplot(data) {
     svg.select('#scatterplot-title')
     .text(`Year ${currentYear}`);
 
-    if (currentYear === 'ALL') {
-        const xTarget = width - 65;              // Adjust to point at the cluster
-        const yTarget = yScale(94);              // Use your yScale for rating 94
+    if (currentYear === 'ALL') {             // Use your yScale for rating 94
     
         const annotationsall = [{
             note: {
                 title: "Messi & Ronaldo: The GOAT Era",
                 label: "Lionel Messi and Cristiano Ronaldo hold the all-time records for Ballon d'Or wins (8 for Messi, 5 for Ronaldo), goals, and assists. They are the only players in history to have a 94 Overall Rating in FIFA, cementing their legendary status.",
-                wrap: 350,
+                wrap: 340,
             },
             connector: {
                 end: 'arrow',
             },
-            x: xTarget,
-            y: yTarget,
-            dx: 0,    // Keep directly below the point
-            dy: 90,   // Pushes the annotation box downward
+            x: width - 55,
+            y: yScale(94), // Adjust this to the actual rating value
+            dx: -200,    // Keep directly below the point
+            dy: 50,   // Pushes the annotation box downward
         }];
     
         const annotationall = d3.annotation().type(d3.annotationCallout).annotations(annotationsall);

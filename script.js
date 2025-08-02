@@ -176,9 +176,9 @@ function updateScatterplot(data) {
     svg.append('text')
         .attr('id', 'scatterplot-title')
         .attr('x', width / 2)
-        .attr('y', 40) // move a bit lower if needed
+        .attr('y', 24) // move a bit lower if needed
         .attr('text-anchor', 'middle')
-        .style('font-size', '32px')
+        .style('font-size', '30px')
         .style('font-weight', 'bold')
         .style('fill', '#003366') // dark blue
         .text(`Top FIFA Players: ${currentYear}`);
@@ -252,10 +252,10 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: width - 75,      // rightmost cluster: adjust for your chart
-            y: 90,              // mid-high potential
-            dx: -150,           // arrow length/angle
-            dy: 50,
+            x: width - 70,      // rightmost cluster: adjust for your chart
+            y: 93,              // mid-high potential
+            dx: -100,           // arrow length/angle
+            dy: -80,
         }, ];
 
         const annotationall = d3.annotation().type(d3.annotationCallout).annotations(annotationsall);

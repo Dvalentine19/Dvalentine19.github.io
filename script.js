@@ -209,28 +209,29 @@ function updateScatterplot(data) {
         legendDiv.appendChild(legendItem);
     });
 
-    // --- POSITION LEGEND ---
+// --- POSITION LEGEND ---
     const positionLegendDiv = document.getElementById('position-legend');
     positionLegendDiv.innerHTML = '';
 
-    // Use the filtered plotData, not scatterData, so only visible positions show up
     const positions = [...new Set(plotData.map(d => d.position))];
     positions.sort().forEach((position) => {
         const legendItem = document.createElement('div');
         legendItem.className = 'legend-item';
 
+        // Just the position name, no color box:
         const legendLabel = document.createElement('div');
         legendLabel.textContent = position;
+        legendLabel.style.cursor = "pointer";
 
-        legendItem.appendChild(legendColor);
         legendItem.appendChild(legendLabel);
 
         legendItem.addEventListener('click', () => {
             updatePositionData(position);
-        });
-
-        positionLegendDiv.appendChild(legendItem);
     });
+
+    positionLegendDiv.appendChild(legendItem);
+});
+
 
     const legendHeight = legendDiv.offsetHeight;
     svg.attr('height', Math.max(height + margin.top + margin.bottom, legendHeight));

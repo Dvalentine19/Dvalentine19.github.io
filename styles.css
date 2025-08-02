@@ -32,18 +32,19 @@ h2{
     border-radius: 12px;
 }
 
-#scatter_container{
+#scatter_container {
     display: flex;
     flex-direction: row;
     margin-bottom: 1px;
     padding-top: 50px;
     padding-bottom: 30px;
     padding-right: 100px;
-    border: 6px solid #1a8800;  /* dark green pitch border */
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 32px rgba(30,120,30,0.07);
+    border: 10px solid #1a8800;     /* keep the green border */
+    background: #e7f2ff;             /* faint yellow: try #e7f2ff for baby blue */
+    border-radius: 24px;
+    box-shadow: 0 3px 18px rgba(70,100,10,0.10);
 }
+
 
 #legend {
     border: 2px solid #d4af37; /* gold */

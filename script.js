@@ -176,10 +176,11 @@ function updateScatterplot(data) {
     svg.append('text')
         .attr('id', 'scatterplot-title')
         .attr('x', width / 2)
-        .attr('y', 8)
+        .attr('y', 40) // move a bit lower if needed
         .attr('text-anchor', 'middle')
-        .style('font-size', '24px')
+        .style('font-size', '32px')
         .style('font-weight', 'bold')
+        .style('fill', '#003366') // dark blue
         .text(`Top FIFA Players: ${currentYear}`);
 
 

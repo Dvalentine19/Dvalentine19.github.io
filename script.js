@@ -245,21 +245,59 @@ function updateScatterplot(data) {
     if (currentYear === 'ALL') {
         const annotationsall = [{
             note: {
-                title: "Top-Performing Universities",
-                label: 'This cluster highlights the universities with high Research and Teaching score through 2020-2024. Notice the consistency of the top ranked universities.',
-                wrap: 300,
+                title: "Messi & Ronaldo: The GOAT Era",
+                label: "Lionel Messi and Cristiano Ronaldo hold the all-time records for Ballon d'Or wins (8 for Messi, 5 for Ronaldo), goals, and assists. They are the only players in history to have a 94 Overall Rating in FIFA, cementing their legendary status.",
+                wrap: 350,
             },
             connector: {
                 end: 'arrow',
             },
-            x: width -170,
-            y: 80,
-            dx: -50,
-            dy: 250,
+            x: width - 75,      // rightmost cluster: adjust for your chart
+            y: 90,              // mid-high potential
+            dx: -150,           // arrow length/angle
+            dy: 50,
         }, ];
 
         const annotationall = d3.annotation().type(d3.annotationCallout).annotations(annotationsall);
         svg.append('g').attr('class', 'annotation-group').call(annotationall);
+    
+    } else if (currentYear === '2018') {
+        const annotations2018 = [{
+            note: {
+                title: 'Chinese Universities',
+                label: 'Notice the top Chinese Universities are relatively close to each other and are fairing pretty well with other top-performing universities.',
+                wrap: 260,
+            },
+            connector: {
+                end: 'arrow',
+            },
+            x: width -200,
+            y: 105,
+            dx: -10,
+            dy: 140,
+        }, ];
+
+        const annotation2018 = d3.annotation().type(d3.annotationCallout).annotations(annotations2018);
+        svg.append('g').attr('class', 'annotation-group').call(annotation2018);
+
+    } else if (currentYear === '2019') {
+        const annotations2019 = [{
+            note: {
+                title: 'Chinese Universities',
+                label: 'Notice the top Chinese Universities are relatively close to each other and are fairing pretty well with other top-performing universities.',
+                wrap: 260,
+            },
+            connector: {
+                end: 'arrow',
+            },
+            x: width -200,
+            y: 105,
+            dx: -10,
+            dy: 140,
+        }, ];
+
+        const annotation2019 = d3.annotation().type(d3.annotationCallout).annotations(annotations2019);
+        svg.append('g').attr('class', 'annotation-group').call(annotation2019);
 
     } else if (currentYear === '2020') {
         const annotations2020 = [{
@@ -279,6 +317,7 @@ function updateScatterplot(data) {
 
         const annotation2020 = d3.annotation().type(d3.annotationCallout).annotations(annotations2020);
         svg.append('g').attr('class', 'annotation-group').call(annotation2020);
+
     } else if (currentYear === '2021') {
         const annotations2021 = [{
             note: {
@@ -316,6 +355,7 @@ function updateScatterplot(data) {
 
         const annotation2022 = d3.annotation().type(d3.annotationCallout).annotations(annotations2022);
         svg.append('g').attr('class', 'annotation-group').call(annotation2022);
+
     }  else if (currentYear === '2023') {
         const annotations2023 = [{
             note: {

@@ -311,8 +311,8 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: xScale(94),
-            y: yScale(94),
+            x: xScale(90),
+            y: yScale(91),
             dx: -50,
             dy: 140,
         }, ];
@@ -330,8 +330,8 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: xScale(94),
-            y: yScale(94),
+            x: xScale(91),
+            y: yScale(91),
             dx: -50,
             dy: 140,
         }, ];
@@ -349,8 +349,8 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: xScale(94),
-            y: yScale(94),
+            x: xScale(93),
+            y: yScale(93),
             dx: -50,
             dy: 140,
         }, ];
@@ -368,7 +368,7 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: xScale(94),
+            x: xScale(89),
             y: yScale(94),
             dx: -50,
             dy: 140,
@@ -386,8 +386,8 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: xScale(94),
-            y: yScale(94),
+            x: xScale(91),
+            y: yScale(97),
             dx: -50,
             dy: 140,
         }, ];

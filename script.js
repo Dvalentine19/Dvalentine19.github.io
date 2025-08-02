@@ -253,10 +253,10 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: width - 55,
-            y: yScale(94), // Adjust this to the actual rating value
-            dx: -200,    // Keep directly below the point
-            dy: 50,   // Pushes the annotation box downward
+            x: width -225,
+            y: 95,
+            dx: 10,
+            dy: 140,  // Pushes the annotation box downward
         }];
     
         const annotationall = d3.annotation().type(d3.annotationCallout).annotations(annotationsall);
@@ -269,13 +269,13 @@ function updateScatterplot(data) {
             note: {
                 title: "Ronaldo’s Real Madrid Farewell",
                 label: "Ronaldo ended his Real Madrid era with a 44-goal season, another Champions League title, and Portugal’s first major trophy. 2018 marked his final year before joining Juventus.",
-                wrap: 330,
+                wrap: 300,
             },
             connector: { end: 'arrow' },
-            x: width -55,
-            y: yScale(94), // Adjust this to the actual rating value
-            dx: -200,
-            dy: 50,
+            x: width -225,
+            y: 93,
+            dx: -10,
+            dy: 140,
         }];
     
         const annotation2018 = d3.annotation().type(d3.annotationCallout).annotations(annotations2018);
@@ -292,9 +292,9 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: width -200,
-            y: 105,
-            dx: -10,
+            x: width -225,
+            y: 95,
+            dx: 10,
             dy: 140,
         }, ];
 
@@ -311,9 +311,9 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: width -200,
-            y: 105,
-            dx: -10,
+            x: width -225,
+            y: 95,
+            dx: 10,
             dy: 140,
         }, ];
 

@@ -243,6 +243,9 @@ function updateScatterplot(data) {
     .text(`Year ${currentYear}`);
 
     if (currentYear === 'ALL') {
+        const xTarget = width - 65;              // Adjust to point at the cluster
+        const yTarget = yScale(94);              // Use your yScale for rating 94
+    
         const annotationsall = [{
             note: {
                 title: "Messi & Ronaldo: The GOAT Era",
@@ -252,33 +255,36 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: width - 70,      // rightmost cluster: adjust for your chart
-            y: 93,              // mid-high potential
-            dx: -100,           // arrow length/angle
-            dy: -80,
-        }, ];
-
+            x: xTarget,
+            y: yTarget,
+            dx: 0,    // Keep directly below the point
+            dy: 90,   // Pushes the annotation box downward
+        }];
+    
         const annotationall = d3.annotation().type(d3.annotationCallout).annotations(annotationsall);
         svg.append('g').attr('class', 'annotation-group').call(annotationall);
     
+    
     } else if (currentYear === '2018') {
+        const xTarget = width - 55;    // adjust if needed
+        const yTarget = yScale(94);    // adjust if his actual rating is different
+    
         const annotations2018 = [{
             note: {
-                title: 'Chinese Universities',
-                label: 'Notice the top Chinese Universities are relatively close to each other and are fairing pretty well with other top-performing universities.',
-                wrap: 260,
+                title: "Ronaldo’s Real Madrid Farewell",
+                label: "Ronaldo ended his Real Madrid era with a 44-goal season, another Champions League title, and Portugal’s first major trophy. 2018 marked his final year before joining Juventus.",
+                wrap: 330,
             },
-            connector: {
-                end: 'arrow',
-            },
-            x: width -200,
-            y: 105,
-            dx: -10,
-            dy: 140,
-        }, ];
-
+            connector: { end: 'arrow' },
+            x: xTarget,
+            y: yTarget,
+            dx: 0,
+            dy: 90,
+        }];
+    
         const annotation2018 = d3.annotation().type(d3.annotationCallout).annotations(annotations2018);
         svg.append('g').attr('class', 'annotation-group').call(annotation2018);
+    
 
     } else if (currentYear === '2019') {
         const annotations2019 = [{

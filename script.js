@@ -292,10 +292,10 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: 94,
-            y: 95,
-            dx: -500,
-            dy: 180,
+            x: xScale(94),
+            y: yScale(94),
+            dx: -50,
+            dy: 140,
         }, ];
 
         const annotation2019 = d3.annotation().type(d3.annotationCallout).annotations(annotations2019);
@@ -304,17 +304,17 @@ function updateScatterplot(data) {
     } else if (currentYear === '2020') {
         const annotations2020 = [{
             note: {
-                title: 'Chinese Universities',
-                label: 'Notice the top Chinese Universities are relatively close to each other and are fairing pretty well with other top-performing universities.',
-                wrap: 260,
+                title: "Liverpool's Champions League Triumph",
+                label: "Liverpool won the 2019 Champions League, and by 2020, several of their stars—Van Dijk, Salah, Mané, and Alisson—ranked among FIFA's top-rated players, marking a golden era for the club.",
+                wrap: 320,
             },
             connector: {
                 end: 'arrow',
             },
-            x: width -225,
-            y: 95,
-            dx: 10,
-            dy: 180,
+            x: xScale(94),
+            y: yScale(94),
+            dx: -50,
+            dy: 140,
         }, ];
 
         const annotation2020 = d3.annotation().type(d3.annotationCallout).annotations(annotations2020);
@@ -323,16 +323,16 @@ function updateScatterplot(data) {
     } else if (currentYear === '2021') {
         const annotations2021 = [{
             note: {
-                title: 'Japan Anomaly',
-                label: 'University of Tokyo scored a very high research and teaching metrics for this year with just an overall score of 76. One of few countries witin the Top-Performing University Cluster',
-                wrap: 200,
+                title: "Lewandowski & The Veteran Surge",
+                label: "Robert Lewandowski broke Gerd Müller's Bundesliga goal record and was FIFA's highest-rated striker. 2021 also saw a record number of players over age 30 in the top 30, proving experience still dominates at the highest level.",
+                wrap: 330,
             },
             connector: {
                 end: 'arrow',
             },
-            x: width -225,
-            y: 95,
-            dx: 10,
+            x: xScale(94),
+            y: yScale(94),
+            dx: -50,
             dy: 140,
         }, ];
 
@@ -342,17 +342,17 @@ function updateScatterplot(data) {
     } else if (currentYear === '2022') {
         const annotations2022 = [{
             note: {
-                title: 'Lowest Score of 2022',
-                label: 'Chinese University of Hong Kong has the lowest score with a score of 71.3',
-                wrap: 500,
+                title: "Messi's World Cup Triumph",
+                label: "Lionel Messi led Argentina to victory in the 2022 World Cup, earning the Golden Ball and cementing his legacy as one of the greatest players in football history.",
+                wrap: 320,
             },
             connector: {
                 end: 'arrow',
             },
-            x: width -820,
-            y: 375,
-            dx: 120,
-            dy: 20,
+            x: xScale(94),
+            y: yScale(94),
+            dx: -50,
+            dy: 140,
         }, ];
 
         const annotation2022 = d3.annotation().type(d3.annotationCallout).annotations(annotations2022);
@@ -361,17 +361,17 @@ function updateScatterplot(data) {
     }  else if (currentYear === '2023') {
         const annotations2023 = [{
             note: {
-                title: 'Best University',
-                label: 'Oxford University has consistently and notably scored as the highest overall university from 2020-2023 so far.',
-                wrap: 300,
+                title: "Haaland's Historic Run",
+                label: "Erling Haaland broke the Premier League single-season goal record in 2023, scoring 36 goals for Manchester City and establishing himself among the top FIFA-rated players. First time top 30 player from a none top 5 league.",
+                wrap: 310,
             },
             connector: {
                 end: 'arrow',
             },
-            x: width -140,
-            y: 10,
-            dx: -10,
-            dy: 280,
+            x: xScale(94),
+            y: yScale(94),
+            dx: -50,
+            dy: 140,
         }, ];
 
         const annotation2023 = d3.annotation().type(d3.annotationCallout).annotations(annotations2023);
@@ -379,17 +379,17 @@ function updateScatterplot(data) {
     }   else if (currentYear === '2024') {
         const annotations2024 = [{
             note: {
-                title: "UIUC's Record-Breaking Year",
-                label: 'UIUC achieved an overall score of 77.9, which is the highest score out of all years',
-                wrap: 250,
+                title: "Mbappé's Record Debut",
+                label: "Kylian Mbappé shattered records in his debut Real Madrid season, scoring 44 goals and achieving the highest FIFA potential rating ever. 2024 also marks the first time a player from MLS made the top 30.",
+                wrap: 320,
             },
             connector: {
                 end: 'arrow',
             },
-            x: width -560,
-            y: 175,
-            dx: 0,
-            dy: 130,
+            x: xScale(94),
+            y: yScale(94),
+            dx: -50,
+            dy: 140,
         }, ];
 
         const annotation2024 = d3.annotation().type(d3.annotationCallout).annotations(annotations2024);

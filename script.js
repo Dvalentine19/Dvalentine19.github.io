@@ -253,8 +253,8 @@ function updateScatterplot(data) {
             connector: {
                 end: 'arrow',
             },
-            x: width -225,
-            y: 95,
+            x: xScale(94),
+            y: yScale(94),
             dx: 10,
             dy: 140,  // Pushes the annotation box downward
         }];
@@ -285,17 +285,17 @@ function updateScatterplot(data) {
     } else if (currentYear === '2019') {
         const annotations2019 = [{
             note: {
-                title: 'Chinese Universities',
-                label: 'Notice the top Chinese Universities are relatively close to each other and are fairing pretty well with other top-performing universities.',
+                title: "Messi Wins Sixth Ballon d'Or",
+                label: "Messi claimed his record-breaking sixth Ballon d'Or in 2019, leading Barcelona with 51 goals in all competitions and earning the highest rating in FIFA.",
                 wrap: 260,
             },
             connector: {
                 end: 'arrow',
             },
-            x: width -225,
+            x: 94,
             y: 95,
-            dx: 10,
-            dy: 140,
+            dx: -500,
+            dy: 180,
         }, ];
 
         const annotation2019 = d3.annotation().type(d3.annotationCallout).annotations(annotations2019);
@@ -314,7 +314,7 @@ function updateScatterplot(data) {
             x: width -225,
             y: 95,
             dx: 10,
-            dy: 140,
+            dy: 180,
         }, ];
 
         const annotation2020 = d3.annotation().type(d3.annotationCallout).annotations(annotations2020);

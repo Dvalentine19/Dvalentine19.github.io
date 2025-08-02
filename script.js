@@ -264,9 +264,7 @@ function updateScatterplot(data) {
     
     
     } else if (currentYear === '2018') {
-        const xTarget = width - 55;    // adjust if needed
-        const yTarget = yScale(94);    // adjust if his actual rating is different
-    
+
         const annotations2018 = [{
             note: {
                 title: "Ronaldo’s Real Madrid Farewell",
@@ -274,10 +272,10 @@ function updateScatterplot(data) {
                 wrap: 330,
             },
             connector: { end: 'arrow' },
-            x: xTarget,
-            y: yTarget,
-            dx: 0,
-            dy: 90,
+            x: width -55,
+            y: yScale(94), // Adjust this to the actual rating value
+            dx: -200,
+            dy: 50,
         }];
     
         const annotation2018 = d3.annotation().type(d3.annotationCallout).annotations(annotations2018);

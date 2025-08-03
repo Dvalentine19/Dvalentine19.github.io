@@ -249,10 +249,10 @@ function updateScatterplot(data) {
 
     d3.selectAll('.annotation-group').remove();
 
-    svg.select('#scatterplot-title')
-    .text(`Year ${currentYear}`);
+    //svg.select('#scatterplot-title')
+    //.text(`Year ${currentYear}`);
 
-    if (currentYear === 'ALL') {             // Use your yScale for rating 94
+    if (currentYear === 'ALL') {           
     
         const annotationsall = [{
             note: {

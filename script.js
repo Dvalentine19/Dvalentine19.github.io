@@ -176,7 +176,7 @@ function updateScatterplot(data) {
     svg.append('text')
         .attr('id', 'scatterplot-title')
         .attr('x', width / 2)
-        .attr('y', 24) // move a bit lower if needed
+        .attr('y', 19) // move a bit lower if needed
         .attr('text-anchor', 'middle')
         .style('font-size', '30px')
         .style('font-weight', 'bold')

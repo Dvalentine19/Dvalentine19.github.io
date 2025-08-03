@@ -182,7 +182,7 @@ function updateScatterplot(data) {
     svg.append('text')
         .attr('id', 'scatterplot-title')
         .attr('x', width / 2)
-        .attr('y', 19) // move a bit lower if needed
+        .attr('y', 10) // move a bit lower if needed
         .attr('text-anchor', 'middle')
         .style('font-size', '30px')
         .style('font-weight', 'bold')
@@ -338,8 +338,8 @@ function updateScatterplot(data) {
             },
             x: xScale(91),
             y: yScale(91),
-            dx: 120,
-            dy: 50,
+            dx: 90,
+            dy: 45,
         }, ];
 
         const annotation2021 = d3.annotation().type(d3.annotationCallout).annotations(annotations2021);
@@ -395,7 +395,7 @@ function updateScatterplot(data) {
             x: xScale(91),
             y: yScale(97),
             dx: 80,
-            dy: 1600,
+            dy: 160,
         }, ];
 
         const annotation2024 = d3.annotation().type(d3.annotationCallout).annotations(annotations2024);

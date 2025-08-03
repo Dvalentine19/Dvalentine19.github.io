@@ -181,7 +181,7 @@ function updateScatterplot(data) {
         .style('font-size', '30px')
         .style('font-weight', 'bold')
         .style('fill', '#003366') // dark blue
-        .text(`Top FIFA Players: ${currentYear}`);
+        .text(currentYear === 'ALL' ? 'Years 2018–2024' : `Year ${currentYear}`);
 
 
     const legendDiv = document.getElementById('legend');
@@ -313,8 +313,8 @@ function updateScatterplot(data) {
             },
             x: xScale(90),
             y: yScale(91),
-            dx: -50,
-            dy: 140,
+            dx: 150,
+            dy: 70,
         }, ];
 
         const annotation2020 = d3.annotation().type(d3.annotationCallout).annotations(annotations2020);
@@ -332,8 +332,8 @@ function updateScatterplot(data) {
             },
             x: xScale(91),
             y: yScale(91),
-            dx: -50,
-            dy: 140,
+            dx: 150,
+            dy: 60,
         }, ];
 
         const annotation2021 = d3.annotation().type(d3.annotationCallout).annotations(annotations2021);
@@ -370,7 +370,7 @@ function updateScatterplot(data) {
             },
             x: xScale(89),
             y: yScale(94),
-            dx: -50,
+            dx: 200,
             dy: 140,
         }, ];
 
@@ -388,7 +388,7 @@ function updateScatterplot(data) {
             },
             x: xScale(91),
             y: yScale(97),
-            dx: -50,
+            dx: 100,
             dy: 140,
         }, ];
 

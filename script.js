@@ -158,6 +158,10 @@ function updateScatterplot(data) {
     svg.append('g')
         .call(d3.axisLeft(yScale));
 
+    svg.selectAll('.tick text')
+        .style('font-size', '18px')
+        .style('fill', '#003366');
+
     svg.append('text')
         .attr('x', width / 2)
         .attr('y', height + (margin.bottom + 5))
@@ -182,7 +186,7 @@ function updateScatterplot(data) {
     svg.append('text')
         .attr('id', 'scatterplot-title')
         .attr('x', width / 2)
-        .attr('y', 10) // move a bit lower if needed
+        .attr('y', 14) // move a bit lower if needed
         .attr('text-anchor', 'middle')
         .style('font-size', '30px')
         .style('font-weight', 'bold')
@@ -350,15 +354,15 @@ function updateScatterplot(data) {
             note: {
                 title: "Messi's World Cup Triumph",
                 label: "Lionel Messi led Argentina to victory in the 2022 World Cup, earning the Golden Ball and cementing his legacy as one of the greatest players in football history.",
-                wrap: 320,
+                wrap: 300,
             },
             connector: {
                 end: 'arrow',
             },
             x: xScale(93),
             y: yScale(93),
-            dx: -50,
-            dy: 140,
+            dx: -45,
+            dy: 130,
         }, ];
 
         const annotation2022 = d3.annotation().type(d3.annotationCallout).annotations(annotations2022);

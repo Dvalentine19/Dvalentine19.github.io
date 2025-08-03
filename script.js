@@ -162,6 +162,9 @@ function updateScatterplot(data) {
         .attr('x', width / 2)
         .attr('y', height + (margin.bottom + 5))
         .attr('text-anchor', 'middle')
+        .style('font-size', '20px')             // Bigger font
+        .style('font-weight', 'bold')
+        .style('fill', '#003366') 
         .text('Overall Rating');
 
     svg.append('text')
@@ -169,6 +172,9 @@ function updateScatterplot(data) {
         .attr('x', -height / 2)
         .attr('y', -margin.left)
         .attr('text-anchor', 'middle')
+        .style('font-size', '20px')             // Bigger font
+        .style('font-weight', 'bold')
+        .style('fill', '#003366') 
         .text('Potential Rating');
     
 

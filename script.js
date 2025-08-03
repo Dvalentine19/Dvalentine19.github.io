@@ -335,15 +335,15 @@ function updateScatterplot(data) {
             note: {
                 title: "Lewandowski & The Veteran Surge",
                 label: "Robert Lewandowski broke Gerd Müller's Bundesliga goal record and was FIFA's highest-rated striker. 2021 also saw a record number of players over age 30 in the top 30, proving experience still dominates at the highest level.",
-                wrap: 350,
+                wrap: 400,
             },
             connector: {
                 end: 'arrow',
             },
             x: xScale(91),
             y: yScale(91),
-            dx: -20,
-            dy: 60,
+            dx: 1,
+            dy: 80,
         }, ];
 
         const annotation2021 = d3.annotation().type(d3.annotationCallout).annotations(annotations2021);

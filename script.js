@@ -265,8 +265,8 @@ function updateScatterplot(data) {
             },
             x: xScale(94),
             y: yScale(94),
-            dx: -50,
-            dy: 180,  // Pushes the annotation box downward
+            dx: -20,
+            dy: 160,  // Pushes the annotation box downward
         }];
     
         const annotationall = d3.annotation().type(d3.annotationCallout).annotations(annotationsall);

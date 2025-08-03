@@ -342,8 +342,8 @@ function updateScatterplot(data) {
             },
             x: xScale(91),
             y: yScale(91),
-            dx: 55,
-            dy: 50,
+            dx: -20,
+            dy: 60,
         }, ];
 
         const annotation2021 = d3.annotation().type(d3.annotationCallout).annotations(annotations2021);
@@ -390,7 +390,7 @@ function updateScatterplot(data) {
         const annotations2024 = [{
             note: {
                 title: "Mbappe's Record Debut",
-                label: "Kylian Mbappé shattered records in his debut Real Madrid season, scoring 44 goals and achieving the highest FIFA potential rating ever. 2024 also marks the first time a player from MLS made the top 30.",
+                label: "Kylian Mbappe shattered records in his debut Real Madrid season, scoring 44 goals and achieving the highest FIFA potential rating ever. 2024 also marks the first time a player from MLS made the top 30.",
                 wrap: 280,
             },
             connector: {

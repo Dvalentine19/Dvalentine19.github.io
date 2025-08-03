@@ -305,7 +305,7 @@ function updateScatterplot(data) {
         const annotations2020 = [{
             note: {
                 title: "Liverpool's Champions League Triumph",
-                label: "Liverpool won the 2019 Champions League, and by 2020, several of their stars—Van Dijk, Salah, Mané, and Alisson—ranked among FIFA's top-rated players, marking a golden era for the club.",
+                label: "Liverpool won the 2019 Champions League, and by 2020, several of their stars: Van Dijk, Salah, Mané, and Alisson ranked among FIFA's best players, marking a golden era for the club.",
                 wrap: 320,
             },
             connector: {
@@ -314,7 +314,7 @@ function updateScatterplot(data) {
             x: xScale(90),
             y: yScale(91),
             dx: 150,
-            dy: 70,
+            dy: 65,
         }, ];
 
         const annotation2020 = d3.annotation().type(d3.annotationCallout).annotations(annotations2020);
@@ -332,8 +332,8 @@ function updateScatterplot(data) {
             },
             x: xScale(91),
             y: yScale(91),
-            dx: 150,
-            dy: 60,
+            dx: 120,
+            dy: 50,
         }, ];
 
         const annotation2021 = d3.annotation().type(d3.annotationCallout).annotations(annotations2021);
@@ -379,17 +379,17 @@ function updateScatterplot(data) {
     }   else if (currentYear === '2024') {
         const annotations2024 = [{
             note: {
-                title: "Mbappé's Record Debut",
+                title: "Mbappe's Record Debut",
                 label: "Kylian Mbappé shattered records in his debut Real Madrid season, scoring 44 goals and achieving the highest FIFA potential rating ever. 2024 also marks the first time a player from MLS made the top 30.",
-                wrap: 320,
+                wrap: 280,
             },
             connector: {
                 end: 'arrow',
             },
             x: xScale(91),
             y: yScale(97),
-            dx: 100,
-            dy: 140,
+            dx: 80,
+            dy: 1600,
         }, ];
 
         const annotation2024 = d3.annotation().type(d3.annotationCallout).annotations(annotations2024);
